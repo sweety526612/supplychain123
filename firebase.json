@@ -1,0 +1,74 @@
+{
+  "hosting": {
+    "public": "build",
+    "cleanUrls": true,
+    "headers": [
+      {
+        "source": "**/*",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      },
+      {
+        "source" : "**/*.@(jpg|jpeg|gif|png|svg)",
+        "headers" : [
+          {
+            "key" : "Cache-Control",
+            "value" : "max-age=2592000"
+          }
+        ]
+      },
+      {
+        "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "headers" : [
+          {
+            "key" : "Cache-Control",
+            "value" : "max-age=2592000"
+          }
+        ]
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "package.json",
+      "README.md",
+      "**/.*",
+      "**/node_modules/**",
+      "node_modules/**",
+      "public/**",
+      "src/**",
+      "firebase_functions/**",
+      ".git/**"
+    ],
+    "redirects": [
+      {
+        "source": "/tour",
+        "destination": "/#/tour",
+        "type": 301
+      },
+      {
+        "source": "/login",
+        "destination": "/#/login",
+        "type": 301
+      },
+      {
+        "source": "/list",
+        "destination": "/#/list",
+        "type": 301
+      },
+      {
+        "source": "/new",
+        "destination": "/#/new",
+        "type": 301
+      },
+      {
+        "source": "/details/:containerId",
+        "destination": "/#/details/:containerId",
+        "type": 301
+      }
+    ]
+  }
+}
