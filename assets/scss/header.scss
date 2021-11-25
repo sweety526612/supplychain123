@@ -1,0 +1,99 @@
+$header-gradient-start: #3e3e3e;
+$header-gradient-end: #2e2e2e;
+
+header {
+  width: 100%;
+  background-image: linear-gradient(to top, $header-gradient-start, $header-gradient-end);
+
+  &.background-transparent {
+    background-image: none;
+  }
+
+  img {
+    font-size: 10px;
+  }
+
+  .logo {
+    @include media-breakpoint-down(xs) {
+      height: 45px;
+      margin: 20px 10px 20px 5px;
+    }
+
+    height: 45px;
+    margin: 25px;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+
+    .heading-text {
+      font-weight: 300;
+      line-height: 38px;
+      color: $white;
+
+      @include font-size(28px);
+      @include media-breakpoint-down(xs) {
+        @include font-size(16px);
+      }
+    }
+  }
+
+  .cta {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-self: center;
+    color: $white;
+    padding-right: 0;
+
+    .header-cta-wrapper {
+      background-color: #181818;
+      padding: 16px 30px;
+
+      @include media-breakpoint-down(sm) {
+        background-color: unset;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      span {
+        @include font-size(14px);
+        @include media-breakpoint-down(xs) {
+          @include font-size(10px);
+        }
+      }
+
+      .button-wrapper {
+        align-self: center;
+
+        button.primary {
+          @include button($primary);
+          width: 160px;
+          border: 1px solid $primary;
+          color: $white;
+        }
+
+        button.secondary {
+          @include button(rgba(196, 196, 196, 0.4));
+          width: 160px;
+          border: 1px solid $primary;
+          color: rgba(255, 255, 255, 0.4);
+        }
+
+        button.primary, button.secondary {
+          @include media-breakpoint-down(xs) {
+            line-height: 37px;
+            height: 40px;
+            font-size: 15px;
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}

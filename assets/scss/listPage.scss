@@ -1,0 +1,49 @@
+.cta-wrapper {
+  @include cta-wrapper();
+}
+
+.bouncing-loader {
+  margin-bottom: 100px;
+}
+
+.md-data-table--responsive {
+  max-width: 1092px;
+  margin: 0 auto;
+
+  thead tr.md-table-row, tbody tr.md-table-row {
+    border-bottom: 1px solid rgb(201, 201, 201);
+  }
+
+  tbody tr.md-table-row {
+    cursor: pointer;
+  }
+
+  .md-table-column {
+    font-size: 18px;
+    font-weight: 700;
+    width: 33.3%;
+    height: 81px;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 14px;
+    }
+
+    &.md-text {
+      color: rgb(63, 63, 63);
+    }
+
+    &.md-text--secondary {
+      color: rgb(151, 151, 151);
+    }
+
+    &:first-child {
+      @include media-breakpoint-down(xs) {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .users-container {
+    background: var(--light-grey);
+  }
+}
