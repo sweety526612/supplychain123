@@ -2,6 +2,7 @@
 
 https://item-tracking.firebaseapp.com
 
+It is open-source on the GitHub, deveopers use it for application purpose.
 ## Solution
 
 Centralize digital paperwork and item status management into one system, but store data in an immutable secure decentralized ledger.
