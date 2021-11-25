@@ -1,0 +1,11 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "false",
+    "items": {
+      ".read": "true",
+      ".write": "auth != null",
+      ".indexOn": ["containerId", "status", "owner"]
+    }
+  }
+}
