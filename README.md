@@ -1,4 +1,4 @@
-## IOTA Items Tracking DEMO App
+## Tracking
 
 https://item-tracking.firebaseapp.com
 
