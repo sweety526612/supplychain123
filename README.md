@@ -24,7 +24,7 @@ Consolidate digital paperwork and item status tracking into a single system, yet
 
 ### How it works
 
-The Demo software is based on an open-sourced IOTA library written in JavaScript.
+Based on an open-sourced IOTA library written in JavaScript.
 
 
 This library exposes functions for creating a new MAM channel, submitting a new event to the existing channel and retrieving data from the channel.
